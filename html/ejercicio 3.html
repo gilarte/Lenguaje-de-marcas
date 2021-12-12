@@ -1,0 +1,75 @@
+<h1>Formulario de reserva de salas</h1>
+    <style>
+        table,
+        th{
+            border-bottom: black 3px solid;
+    }
+    td{
+        border-top: black 3px solid;
+    }
+       
+    </style>
+    <body>
+        <table widdth="1600" height="0">
+        <tr  bgcolor="D4D2D2" >
+            <td><b>Tu nombre<b><FONT COLOR="red"></b>*</FONT</b></td>
+            <form method="post" action="">
+           <td ><input type="text" id="txtNombre" name="txtNombre" value="Nombre..." size="10"/></td>
+        </tr>
+        <tr >
+            <td><b>Tu Correo Electronico<b><FONT COLOR="red"></b>*</FONT</b></td>
+            <form method="post" action="">
+           <td><input type="text" id="txtNombre" name="txtNombre" value="Correo Electronico..."/></td>
+        </tr>
+        <tr bgcolor="D4D2D2">
+            <td><b>Departamento<b><FONT COLOR="red"></b>*</FONT</b></td>
+            <td><br/>
+                <select id="sel1" name="sel1">
+                  <option value="11" selected>Ventas</option>
+                  <option value="22" >Compras</option>
+                  <option value="33">Otros</option>
+                </select><p></td>
+        </tr>
+        <tr>
+            <td><b>Tipo de reserva que desea reserva<b><FONT COLOR="red"></b>*</FONT</b></td>
+            <td>
+                <input type="radio" id="opc11" name="grupo1" value="11"checked />
+                <label for="opc11">Tipo A</label>
+               
+                <br>                
+                <input type="radio" id="opc12" name="grupo1" value="12"  />
+                <label for="opc12">Tipo B</label>
+
+                <br>
+                <input type="radio" id="opc13" name="grupo1" value="13" />
+                <label for="opc13">Tipo C</label>
+                
+            </td>
+        </tr>
+        <tr bgcolor="D4D2D2">
+            <td><b>Requisito Extra<b></td>
+            <td> 
+                <input type="checkbox" id="check1" name="check1" value="A" checked />
+                <label for="check1">Caballete y Boligrafo</label>
+            
+             <br>
+             <input type="checkbox" id="check2" name="check2" value="B" checked />
+             <label for="check2">Television</label>
+             
+             <br> 
+             <input type="checkbox" id="check3" name="check3" value="C" /> 
+             <label for="check3">Cafe,té y agua</label>
+             
+            </td>
+        </tr>
+        <tr>
+            <td><b>Fecha de la reserva<b><FONT COLOR="red"></b>*</FONT</b></td>
+            <td><input type="date"></td>
+        </tr>
+        <tr bgcolor="D4D2D2">
+            <td><b>Hora de la reserva<b><FONT COLOR="red"></b>*</FONT</b></td>
+            <td><input type="time"></td>
+        </tr>
+    </table>
+    </body>
+</html>
